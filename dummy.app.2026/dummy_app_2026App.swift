@@ -186,7 +186,13 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                  didReceive response: UNNotificationResponse,
                                  withCompletionHandler completionHandler: @escaping () -> Void) {
-        AppDelegate.braze?.notifications.handleUserNotification(response: response, withCompletionHandler: completionHandler)
+        let handled = AppDelegate.braze?.notifications.handleUserNotification(response: response, withCompletionHandler: completionHandler) ?? false
+        if handled {
+            print("# ✅ Notification handled by Braze")
+        } else {
+            print("# ⚠️ Notification not handled by Braze")
+            completionHandler()
+        }
     }
 }
 

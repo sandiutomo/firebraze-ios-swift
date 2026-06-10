@@ -1,6 +1,0 @@
-framework module Pods_dummy_app_2026_dummy_app_2026UITests {
-  umbrella header "Pods-dummy.app.2026-dummy.app.2026UITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

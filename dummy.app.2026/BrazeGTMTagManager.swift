@@ -6,18 +6,22 @@ import GoogleTagManager
 import BrazeKit
 
 let ActionTypeKey: String = "actionType"
+
 // Custom Events
 let LogEventAction: String = "logEvent"
 let LogEventName: String = "eventName"
+
 // Purchase Events
 let LogPurchaseAction: String = "logPurchase"
 let PurchaseProductIdKey: String = "product_id"
 let PurchaseCurrencyKey: String = "currency"
 let PurchasePriceKey: String = "price"
 let PurchasePropertiesKey: String = "properties"
+
 // Change User
 let ChangeUserAction: String = "changeUser"
 let ChangeUserExternalUserId: String = "externalUserId"
+
 // Attributes
 let CustomAttributeAction: String = "customAttribute"
 let CustomAttributeKey: String = "customAttributeKey"
@@ -25,10 +29,12 @@ let CustomAttributeValueKey: String = "customAttributeValue"
 let UserAttributeAction: String = "userAttribute"
 let AttributeKey: String = "attributeKey"
 let AttributeValueKey: String = "attributeValue"
+
 // Subscription States
 let SubscriptionStateKey: String = "subscriptionState"
 let SetEmailSubscriptionAction: String = "setEmailSubscription"
 let SetPushSubscriptionAction: String = "setPushSubscription"
+
 // Subscription Groups
 let AddToSubscriptionGroupAction: String = "addToSubscriptionGroup"
 let RemoveFromSubscriptionGroupAction: String = "removeFromSubscriptionGroup"

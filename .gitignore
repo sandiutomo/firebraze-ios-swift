@@ -15,3 +15,18 @@ dummy.app.2026/GoogleService-Info.plist
 # =========================
 dummy.app.2026/container/
 dummy.app.2026/container/GTM-*.json
+
+# =========================
+# Swift Package Manager
+# =========================
+.swiftpm/
+.build/
+# Note: Package.resolved is intentionally tracked for reproducible builds
+
+# =========================
+# Xcode (user-local state)
+# =========================
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store
